@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Sun Dial Simulation</title>
+    <title>Unity WebGL Player | Sun Dial Simulation</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=1920 height=1080 style="width: 1920px; height: 1080px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width="100%" height="100%" style="width: 100%; height: 100%; background: #231F20"></canvas>
     <script src="Build/build.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
@@ -17,7 +17,7 @@
         companyName: "DefaultCompany",
         productName: "Sun Dial Simulation",
         productVersion: "0.1",
-        matchWebGLToCanvasSize: true, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
